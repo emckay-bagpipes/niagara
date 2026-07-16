@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bagpipes Niagara Falls</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1C1C1C;
+    color: white;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    line-height: 28px;
+}
+
+.container {
+    position: relative;
+}
+
+.ribbon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: black;
+    background: rgba(255, 255, 255, 0.80);
+    padding: 20px 40px;
+    z-index: 10;
+
+}
+
+.ribbon h1 {
+    margin: 0;
+    font-size: 36px;
+    padding: 30px 0 30px 50px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: normal;
+    padding: 25px 0 10px;
+    font-style: italic;
+    font-family: Georgia, serif;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Georgia, serif;
+}
+
+.content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.image-column {
+    width: 40%;
+}
+
+.image-column img {
+    width: 100%;
+    display: block;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+figcaption {
+    font-size: 10px;
+}
+
+.text-column {
+    width: 60%;
+    padding: 130px 60px 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    
+}
+
+.price-box {
+    font-size: 16px;
+    font-style: italic;
+    padding-bottom: 35px;
+
+}
+
+.contact-us {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 25px;
+    text-align: center;
+    max-width: 500px;
+}
+
+.contact-us input,
+.contact-us textarea {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    background: #222;
+    color: white;
+    border: 1px solid #777;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.contact-us textarea {
+    resize: vertical;
+}
+
+button {
+    color: black;
+    background: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+a {
+    color: #7ec8ff;
+}
+
+a:hover {
+    color: #d4af37;
+}
+
+
+/* Mobile layout */
+
+@media (max-width: 800px) {
+
+    .content {
+        flex-direction: column;
+    }
+
+    .image-column,
+    .text-column {
+        width: 100%;
+    }
+
+    .ribbon {
+        position: relative;
+        padding: 15px;
+    }
+
+    .ribbon h1 {
+        font-size: 26px;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .text-column {
+        padding: 30px 25px;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+    }
+
+    h2 {
+        font-size: 22px;
+        padding-top: 10px;
+    }
+
+    .contact-us {
+        max-width: 100%;
+    }
+
+    .contact-us input,
+    .contact-us textarea {
+        width: 100%;
+        max-width: none;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="ribbon">
+        <h1>Emily McKay: Bagpipes for all Occasions</h1>
+    </div>
+
+    <div class="content">
+
+        <div class="image-column">
+
+            <img src="https://raw.githubusercontent.com/emckaypiping/bagpipes-niagara/main/bagpipe-profile-pic.jpg"
+                 alt="A young person playing the bagpipes.">
+
+            <figcaption>
+                Photo by
+                <a href="https://brightskystudios.ca/" target="_blank">
+                    Bright Sky Studios
+                </a>.
+                Not licensed for reuse.
+            </figcaption>
+
+        </div>
+
+
+        <div class="text-column">
+
+            <h2>Hire an experienced piper for your event today</h2>
+
+            <p>
+                Based in Niagara Falls, Ontario, I have over 8 years of performing
+                in parades, competitions, celebrations of life, and more.
+                Whether you're marking an important milestone, honouring a loved one,
+                or would simply like to hear some bagpipes, I'd be honoured to help
+                make your event memorable.
+            </p>
+
+
+            <div class="price-box">
+
+                <p>
+                    Base rate: $300<br>
+                    Events beyond a 1 hour radius of Niagara Falls
+                    are subject to travel costs.
+                </p>
+
+
+                <div class="contact-us">
+
+                    <h3>Contact Me</h3>
+
+                    <form action="https://formsubmit.co/emily.mckay@outlook.com" method="POST">
+
+                        <label for="name">Name</label><br>
+                        <input type="text" id="name" name="name" required>
+                        <br><br>
+
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" required>
+                        <br><br>
+
+                        <label for="message">Message</label><br>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <br><br>
+
+                        <button type="submit">Send Message</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
