@@ -29,15 +29,18 @@ body {
     width: 100%;
     color: black;
     background: rgba(255, 255, 255, 0.80);
-    padding: 20px 40px;
+    padding: 20px 0;
     z-index: 10;
+}
 
+.ribbon-inner {
+    padding-left: calc(40% + 60px);
+    padding-right: 60px;
 }
 
 .ribbon h1 {
     margin: 0;
     font-size: 36px;
-    padding: 30px 0 30px 50px;
     font-style: normal;
     text-transform: uppercase;
 }
@@ -196,14 +199,16 @@ a:hover {
 <div class="container">
 
     <div class="ribbon">
+    <div class="ribbon-inner">
         <h1>Emily McKay: Bagpipes for all Occasions</h1>
     </div>
+</div>
 
     <div class="content">
 
         <div class="image-column">
 
-            <img src="bagpipe-profile-pic.jpg"
+            <img src="https://raw.githubusercontent.com/emckaypiping/bagpipes-niagara/main/bagpipe-profile-pic.jpg"
                  alt="A young person playing the bagpipes.">
 
             <figcaption>
